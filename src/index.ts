@@ -6,4 +6,4 @@ import Fork from './Fork';
 import Pipe from './Pipe';
 
 export default Delog;
-export {Output, Console, Filter, Fork, Pipe};
+export { Output, Console, Filter, Fork, Pipe };

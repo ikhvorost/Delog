@@ -17,6 +17,7 @@ export default class Delog extends Log {
     return new Log(name, this);
   }
 
+  // @internal
   send(item: LogItem) {
     this.output?.log(item);
   }
