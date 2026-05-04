@@ -10,6 +10,7 @@
   },
   "scripts": {
     "build": "tsup",
+    "prepack": "yarn build",
     "test": "jest"
   },
   "keywords": ["log", "logger", "pipe", "fork", "filter", "output"],
