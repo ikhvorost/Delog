@@ -1,17 +1,21 @@
 {
   "name": "delog",
   "version": "1.0.0",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": ["dist"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ikhvorost/delog.git"
+  },
   "scripts": {
     "build": "tsup",
     "prepare": "$npm_execpath run build",
     "test": "jest"
   },
   "keywords": ["log", "logger", "pipe", "fork", "filter", "output"],
-  "author": "Iurii Khvorost 2026",
-  "license": "ISC",
+  "author": "Iurii Khvorost",
+  "license": "MIT",
   "description": "Modern logger for JavaScript",
   "devDependencies": {
     "@types/jest": "^30.0.0",
