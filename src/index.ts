@@ -4,6 +4,7 @@ import Console from './Console';
 import Filter from './Filter';
 import Fork from './Fork';
 import Pipe from './Pipe';
+import LogItem from './LogItem';
 
 export default Delog;
-export { Output, Console, Filter, Fork, Pipe };
+export { LogItem, Output, Console, Filter, Fork, Pipe };
