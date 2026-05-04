@@ -6,7 +6,7 @@
   "files": ["dist"],
   "scripts": {
     "build": "tsup",
-    "prepare": "npm run build",
+    "prepare": "$npm_execpath run build",
     "test": "jest"
   },
   "keywords": ["log", "logger", "pipe", "fork", "filter", "output"],
