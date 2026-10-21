@@ -6,11 +6,11 @@ import LogItem from "./LogItem";
 
 export default class Delog extends Log {
 
-  public static disabled = new Delog('', undefined);
+  public static disabled = new Delog('', null);
 
-  public constructor(category = 'DELOG', private output: IOutput | undefined = new Console()) {
+  public constructor(category = 'DELOG', private output: IOutput | null = new Console()) {
     super(category);
-    this.logger = this;
+    this.logger = output ? this : undefined;
   }
 
   public category(name: string): Log {

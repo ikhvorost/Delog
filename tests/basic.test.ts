@@ -1,9 +1,8 @@
-import Delog from "../dist/delog"
+import Delog from "../dist/index"
 
-const logger = new Delog();
-
-test('Delog should work in jest', function () {
-  logger.log('log');
+test('All levels', function () {
+  const logger = new Delog();
+  expect(logger.log('log')?.message).toBe('log');
   logger.trace('trace');
   logger.debug('debug');
   logger.info('info');
@@ -11,4 +10,9 @@ test('Delog should work in jest', function () {
   logger.error('error');
   logger.assert(false, 'assert');
   logger.fault('fault');
+})
+
+test('disabled', function () {
+  const log = Delog.disabled;
+  expect(log.debug('debug')).toBe(undefined);
 })
